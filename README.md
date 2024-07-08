@@ -17,3 +17,14 @@ This script will generate a certificate for FileMaker Server, along with a renew
     - [setup.sh](setup.sh)
     - [hooks/post/propagate-to-filemaker.sh](hooks/post/propagate-to-filemaker.sh)
 1. Run `sh ./setup.sh` to install the necessary dependencies and set up the certificate.
+
+## Run manually
+
+If you need to run the scripts manually after installing (e.g. after a manual renewal), just run:
+```bash
+# Stop the FileMaker Server
+sudo sh /etc/letsencrypt/renewal-hooks/pre/stop-filemaker-server.sh
+
+# Inject the new certificate.
+sudo sh /etc/letsencrypt/renewal-hooks/post/propagate-to-filemaker.sh
+```
