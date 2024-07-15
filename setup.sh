@@ -8,6 +8,7 @@ sudo snap install --classic certbot
 
 # Stop the FileMaker Server, to allow certbot to bind to port 80.
 sudo service fmshelper stop
+sleep 10s
 
 # Create a new certificate.
 sudo certbot certonly --standalone -d $DOMAIN_NAME

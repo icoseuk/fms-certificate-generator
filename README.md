@@ -16,7 +16,7 @@ This script will generate a certificate for FileMaker Server, along with a renew
 1. Replace the variable values in the following files with your own:
     - [setup.sh](setup.sh)
     - [hooks/post/propagate-to-filemaker.sh](hooks/post/propagate-to-filemaker.sh)
-1. Run `sh ./setup.sh` to install the necessary dependencies and set up the certificate.
+1. Run `sudo sh ./setup.sh` to install the necessary dependencies and set up the certificate.
 
 ## Run manually
 
