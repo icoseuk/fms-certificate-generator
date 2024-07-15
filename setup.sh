@@ -3,8 +3,8 @@
 DOMAIN_NAME="fms.example.org"
 
 # Install certbot.
-sudo apt-get update
-sudo apt-get install -y certbot
+sudo apt-get install snapd
+sudo snap install --classic certbot
 
 # Stop the FileMaker Server, to allow certbot to bind to port 80.
 sudo service fmshelper stop

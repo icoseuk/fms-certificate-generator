@@ -4,6 +4,10 @@ DOMAIN_NAME="fms.example.org"
 ADMIN_USER="admin"
 ADMIN_PASS="password"
 
+# Reopen the FileMaker Server.
+service fmshelper start
+sleep 10s
+
 # Copy the certificate files to a temporary directory.
 rm -rf "/tmp/$DOMAIN_NAME/"
 mkdir "/tmp/$DOMAIN_NAME/"
